@@ -1,0 +1,81 @@
+{
+  "inputIndex": 0,
+  "invoiceNumber": "INV-2026-0002",
+  "processingStatus": "SUCCEEDED",
+  "conformanceStatus": "ACCEPTED",
+  "artifactDelivered": true,
+  "artifactKey": "ARTIFACT-0001-INV-2026-0002.pdf",
+  "evidenceKey": "EVIDENCE-0001.json",
+  "evidence": {
+    "evidenceVersion": "1.0",
+    "product": "facturx",
+    "invoiceNumber": "INV-2026-0002",
+    "artifactSha256": "3e41fca33a3adb6d5b441affaf1e158170c36da12bd62abe3487d9bf1614d0bc",
+    "artifactBytes": 48163,
+    "mediaType": "application/pdf",
+    "standard": "ZUGFeRD / Factur-X",
+    "versions": {
+      "generator": "0.1.0",
+      "standard": "2.5 / 1.09",
+      "ruleset": "Mustang 2.24.0 ZF_250 plus veraPDF 1.30.2"
+    },
+    "validation": {
+      "status": "ACCEPTED",
+      "scope": "PINNED_OFFLINE_TECHNICAL_PREFLIGHT",
+      "engine": "veraPDF 1.30.2 plus ZUGFeRD 2.5 rules",
+      "scenario": "ZUGFeRD 2.5 / Factur-X 1.09 EN16931",
+      "profile": "ZUGFERD_EN16931",
+      "counts": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 0,
+        "information": 0
+      },
+      "findings": [],
+      "findingsTruncated": false,
+      "container": {
+        "type": "PDF_A_3",
+        "pdfaStatus": "COMPLIANT",
+        "pdfaProfile": "PDF/A-3u validation profile",
+        "metadataStatus": "CONSISTENT",
+        "embeddedFileName": "factur-x.xml",
+        "embeddedFileBytes": 8196,
+        "afRelationship": "Alternative",
+        "mimeType": "text/xml",
+        "xmp": {
+          "documentFileName": "factur-x.xml",
+          "documentType": "INVOICE",
+          "version": "1.0",
+          "conformanceLevel": "EN 16931",
+          "schemaNamespaces": [
+            "urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#"
+          ],
+          "pdfaPart": "3",
+          "pdfaConformance": "U"
+        },
+        "rules": {
+          "zugferd": "2.5",
+          "facturX": "1.09"
+        },
+        "visibleContentConsistency": "NOT_VERIFIED",
+        "signatureStatus": "NOT_CHECKED"
+      },
+      "embeddedXmlSha256": "f3a36143b45966f58eaa2d9edcde2149a3e5a1ee767c76acf46c307ce94ac2bc"
+    },
+    "generatedAt": "2026-07-30T09:15:07Z",
+    "transmitted": false,
+    "acceptedByNetwork": null,
+    "networkIdentifier": null,
+    "signed": false,
+    "archived": false,
+    "scope": "PINNED_OFFLINE_TECHNICAL_PREFLIGHT"
+  },
+  "error": null,
+  "sampleProvenance": {
+    "kind": "LOCAL_ENGINE_OUTPUT",
+    "apifyRun": false,
+    "liveActorOutput": false,
+    "actorPublicationStatus": "PRIVATE_RELEASE_PENDING",
+    "repositoryAnnotation": true
+  }
+}
