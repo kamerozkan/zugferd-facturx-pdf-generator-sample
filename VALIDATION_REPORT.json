@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "generatedAt": "2026-07-30",
+  "repository": "zugferd-facturx-pdf-generator-sample",
+  "actor": "kamerozkan/zugferd-facturx-pdf-generator",
+  "actorPublicationStatus": "PRIVATE_RELEASE_PENDING",
+  "liveActorRunUsed": false,
+  "plannedPayPerEvent": {
+    "event": "invoice-generated",
+    "priceUsd": "0.01"
+  },
+  "checks": {
+    "jsonParsing": "PASS",
+    "actorInputSchema": "PASS",
+    "actorDatasetRecordSchema": "PASS",
+    "localGeneration": "PASS",
+    "pinnedOfflineTechnicalPreflight": "PASS",
+    "artifactHashAndByteCount": "PASS",
+    "examplePairCount": 3
+  },
+  "examples": [
+    {
+      "id": 1,
+      "scenario": "Standard consulting service invoice",
+      "inputFile": "01_standard_service_input.json",
+      "outputFile": "01_standard_service_output.json",
+      "localEngineOutput": true,
+      "apifyRun": false,
+      "validationStatus": "ACCEPTED",
+      "artifactSha256": "95d5754a06a49a4676e141a5ab95ac56a8243b0e512d56469c59538dd2e63ea9",
+      "artifactBytes": 44994,
+      "inputSchema": "PASS",
+      "datasetRecordSchema": "PASS",
+      "artifactHash": "PASS"
+    },
+    {
+      "id": 2,
+      "scenario": "Multi-line professional services invoice",
+      "inputFile": "02_multi_line_input.json",
+      "outputFile": "02_multi_line_output.json",
+      "localEngineOutput": true,
+      "apifyRun": false,
+      "validationStatus": "ACCEPTED",
+      "artifactSha256": "3e41fca33a3adb6d5b441affaf1e158170c36da12bd62abe3487d9bf1614d0bc",
+      "artifactBytes": 48163,
+      "inputSchema": "PASS",
+      "datasetRecordSchema": "PASS",
+      "artifactHash": "PASS"
+    },
+    {
+      "id": 3,
+      "scenario": "Recurring service invoice",
+      "inputFile": "03_recurring_service_input.json",
+      "outputFile": "03_recurring_service_output.json",
+      "localEngineOutput": true,
+      "apifyRun": false,
+      "validationStatus": "ACCEPTED",
+      "artifactSha256": "99047dd43e16edc0c4f59ddbcbc94bb28d9890c964dfcc31ecd22613931bed23",
+      "artifactBytes": 45389,
+      "inputSchema": "PASS",
+      "datasetRecordSchema": "PASS",
+      "artifactHash": "PASS"
+    }
+  ]
+}
