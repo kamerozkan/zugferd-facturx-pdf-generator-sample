@@ -1,0 +1,15 @@
+{
+  "id": "t4GwZdgI43Y0D9VwM",
+  "name": "zugferd-facturx-pdf-generator",
+  "title": "ZUGFeRD / Factur-X PDF Generator",
+  "description": "Generate a visible Factur-X 1.09 and ZUGFeRD 2.5 EN 16931 PDF/A-3 with pinned XML, container, and PDF/A validation evidence.",
+  "seoTitle": "ZUGFeRD & Factur-X PDF Invoice Generator API",
+  "seoDescription": "Generate ZUGFeRD 2.5 and Factur-X 1.09 PDF/A-3 invoices from JSON. Embed EN 16931 XML with invoice content and pinned technical validation evidence.",
+  "isPublic": true,
+  "url": "https://apify.com/kamerozkan/zugferd-facturx-pdf-generator",
+  "checkedAt": "2026-09-30",
+  "changeScope": "listing metadata and sample documentation only",
+  "runtimeChanged": false,
+  "schemasChanged": false,
+  "examplesRegenerated": false
+}

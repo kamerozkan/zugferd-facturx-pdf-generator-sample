@@ -1,14 +1,14 @@
-> **Release status:** The Actor is private and publication is pending. The
-intended Store URL is
-[zugferd-facturx-pdf-generator](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator), but this link
-must not be treated as evidence that the Actor is publicly available.
+> **Public Actor:** [Run the invoice generator on Apify](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator). Publication checked September 30, 2026.
 
-# ZUGFeRD and Factur-X PDF Generator: JSON Examples and Dataset Schema
+# ZUGFeRD / Factur-X PDF Generator: Samples
 
-![Release](https://img.shields.io/badge/release-private%20pending-orange)
+Generate a visible Factur-X 1.09 and ZUGFeRD 2.5 EN 16931 PDF/A-3 with pinned XML, container, and PDF/A validation evidence.
+
+[Run ZUGFeRD / Factur-X PDF Generator on Apify](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator)
+
+![Listing](https://img.shields.io/badge/Apify-public-00c7b7)
 ![Examples](https://img.shields.io/badge/examples-3%20paired%20local%20runs-2f855a)
 ![Schema](https://img.shields.io/badge/schema-Actor%20dataset-4c1)
-![Price](https://img.shields.io/badge/planned%20PPE-%240.01-blue)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Generate a visible ZUGFeRD 2.5 and Factur-X 1.09 EN 16931 PDF/A-3 invoice with embedded CII XML from structured JSON.
@@ -73,16 +73,13 @@ Schema files:
 
 ## Pay-per-event contract
 
-The intended release price is exactly **$0.01 per `invoice-generated` event**.
+See the live [Store pricing](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator) for the current `invoice-generated` event price and spending limits.
 One event applies only after one invoice passes the pinned validation stack and
 its artifact and evidence have been delivered. Invalid input, rejected
 artifacts, storage failure, and budget refusal are not intended to charge that
 event.
 
-The Actor is private and its release is pending, so this is not a claim about a
-currently public Store offer. Check the
-[Store page](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator) for the current price,
-build, limits, and publication state when it becomes public.
+The Actor is publicly listed as of September 30, 2026. These committed examples retain their original local test provenance; listing visibility does not turn them into cloud-run evidence.
 
 ## Evidence boundaries
 
@@ -100,16 +97,15 @@ The output keeps these boundaries explicit with `transmitted: false`,
 ## E-invoice generator family
 
 All five repositories use one normalized invoice-intent model and product-specific
-serializers and validators. The sibling links below are intended public GitHub
-locations and may return 404 while publication is pending.
+serializers and validators. The sibling products and sample repositories below are public as of September 30, 2026. Check each live listing for current pricing and input limits.
 
-| Generator | Intended GitHub repository | Intended Apify Store URL |
+| Generator | GitHub sample repository | Apify Store URL |
 |---|---|---|
-| XRechnung Invoice Generator | [sample repository](https://github.com/kamerozkan/xrechnung-invoice-generator-sample) | [release-pending Actor](https://apify.com/kamerozkan/xrechnung-invoice-generator) |
-| Peppol UBL Invoice Generator | [sample repository](https://github.com/kamerozkan/peppol-ubl-invoice-generator-sample) | [release-pending Actor](https://apify.com/kamerozkan/peppol-ubl-invoice-generator) |
-| ZUGFeRD and Factur-X PDF Generator | [sample repository](https://github.com/kamerozkan/zugferd-facturx-pdf-generator-sample) | [release-pending Actor](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator) |
-| FatturaPA Invoice Generator | [sample repository](https://github.com/kamerozkan/fatturapa-invoice-generator-sample) | [release-pending Actor](https://apify.com/kamerozkan/fatturapa-invoice-generator) |
-| KSeF FA(3) Invoice Generator | [sample repository](https://github.com/kamerozkan/ksef-fa-invoice-generator-sample) | [release-pending Actor](https://apify.com/kamerozkan/ksef-fa-invoice-generator) |
+| XRechnung Invoice Generator | [sample repository](https://github.com/kamerozkan/xrechnung-invoice-generator-sample) | [public Actor](https://apify.com/kamerozkan/xrechnung-invoice-generator) |
+| Peppol UBL Invoice Generator | [sample repository](https://github.com/kamerozkan/peppol-ubl-invoice-generator-sample) | [public Actor](https://apify.com/kamerozkan/peppol-ubl-invoice-generator) |
+| ZUGFeRD and Factur-X PDF Generator | [sample repository](https://github.com/kamerozkan/zugferd-facturx-pdf-generator-sample) | [public Actor](https://apify.com/kamerozkan/zugferd-facturx-pdf-generator) |
+| FatturaPA Invoice Generator | [sample repository](https://github.com/kamerozkan/fatturapa-invoice-generator-sample) | [public Actor](https://apify.com/kamerozkan/fatturapa-invoice-generator) |
+| KSeF FA(3) Invoice Generator | [sample repository](https://github.com/kamerozkan/ksef-fa-invoice-generator-sample) | [public Actor](https://apify.com/kamerozkan/ksef-fa-invoice-generator) |
 
 ## Data and license
 
