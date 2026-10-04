@@ -14,8 +14,9 @@ Generate a visible Factur-X 1.09 and ZUGFeRD 2.5 EN 16931 PDF/A-3 with pinned XM
 Generate a visible ZUGFeRD 2.5 and Factur-X 1.09 EN 16931 PDF/A-3 invoice with embedded CII XML from structured JSON.
 
 This flat sample repository contains three paired JSON inputs and outputs,
-the exact Actor input and dataset schema snapshots, and a standard JSON Schema
-for one dataset row. The examples were generated and technically evaluated by
+the October 4 input schema snapshot verified against public release 1.0.3,
+the existing Actor dataset schema snapshot, and a standard JSON Schema for one
+dataset row. The examples were generated and technically evaluated by
 the local release engine. They are not copied from a live Apify run.
 
 Search topics: ZUGFeRD generator, Factur-X generator, PDF/A-3 invoice API, embedded CII XML, ZUGFeRD 2.5, Factur-X 1.09.
@@ -51,6 +52,31 @@ charge occurred.
   UNECE unit codes.
 - Each seller and buyer needs a tax, VAT, or registration identifier.
 - The complete snapshot is [`actor_input_schema.json`](actor_input_schema.json).
+
+## Input storage maintenance on October 4, 2026
+
+The input schema snapshot now marks the JSON `invoice` object and `invoices`
+array as `isSecret: true`. Public `latest` build `1.0.3` and all deployed source
+hashes were verified on October 4. The schema hash is recorded in the
+maintenance evidence below.
+
+In supported Apify input storage, these flags encrypt the marked values before
+storing the run's `INPUT`. The Actor keeps Python `apify==4.0.0` and reads input
+with `Actor.get_input()`, which supports automatic decoding of secret objects
+and arrays. See the [Apify secret input documentation](https://docs.apify.com/actors/development/actor-definition/input-schema/secret-input).
+Existing stored inputs were not audited or migrated by this maintenance.
+
+This change keeps the runtime, dependencies, prices, dataset contract, and
+recorded output files unchanged. The input snapshot also synchronizes fields
+already present in the current Actor source; those pre-existing differences
+from the historical repository schema are separate from the two new privacy
+flags. Generated documents, dataset rows, and downloads are not encrypted by
+these flags. Manage their access and retention separately.
+
+Local checks validated the known single and batch schema-prefill inputs. No new
+encrypted end-to-end Actor run was performed. Historical July 30 examples retain
+their original provenance and are not output from this release. Read the
+[maintenance evidence](INPUT_PRIVACY_MAINTENANCE_2026-10-04.json) for the exact scope and schema hash.
 
 ## Dataset output contract
 

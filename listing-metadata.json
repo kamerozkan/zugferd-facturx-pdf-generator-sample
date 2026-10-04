@@ -7,9 +7,49 @@
   "seoDescription": "Generate ZUGFeRD 2.5 and Factur-X 1.09 PDF/A-3 invoices from JSON. Embed EN 16931 XML with invoice content and pinned technical validation evidence.",
   "isPublic": true,
   "url": "https://apify.com/kamerozkan/zugferd-facturx-pdf-generator",
-  "checkedAt": "2026-09-30",
-  "changeScope": "listing metadata and sample documentation only",
+  "checkedAt": "2026-10-04",
+  "changeScope": "sample input schema synchronized to published privacy release 1.0.3; documentation and maintenance evidence",
   "runtimeChanged": false,
-  "schemasChanged": false,
-  "examplesRegenerated": false
+  "schemasChanged": true,
+  "examplesRegenerated": false,
+  "previousListingAudit": {
+    "checkedAt": "2026-09-30",
+    "changeScope": "listing metadata and sample documentation only",
+    "runtimeChanged": false,
+    "schemasChanged": false,
+    "examplesRegenerated": false
+  },
+  "listingFieldsCheckedAt": "2026-09-30",
+  "inputSchemaChanged": true,
+  "datasetSchemaChanged": false,
+  "privacyMaintenance": {
+    "status": "RELEASE_PUBLISHED_SOURCE_VERIFIED",
+    "date": "2026-10-04",
+    "fields": [
+      "invoice",
+      "invoices"
+    ],
+    "inputStorageSecret": true,
+    "existingStoredInputsAuditedOrMigrated": false,
+    "deliveredOutputEncryptedByThisChange": false,
+    "sdkRequirement": "apify==4.0.0",
+    "schemaSha256": "d093d9f12a7908f403869af5e945e2ca817c8278fb1a0e63941a0dca742b34d8",
+    "evidenceFile": "INPUT_PRIVACY_MAINTENANCE_2026-10-04.json",
+    "newEncryptedEndToEndRunPerformed": false,
+    "release": {
+      "buildId": "izOA8ITtP714sgSwg",
+      "buildNumber": "1.0.3",
+      "buildStatus": "SUCCEEDED",
+      "publicLatestVerified": true,
+      "allSourceHashesVerified": true,
+      "verifiedAtUtc": "2026-10-04T00:12:09.975007+00:00",
+      "inputSchemaSha256": "d093d9f12a7908f403869af5e945e2ca817c8278fb1a0e63941a0dca742b34d8",
+      "secretInputFields": [
+        "invoice",
+        "invoices"
+      ],
+      "newActorRuns": 0,
+      "freshSourceOutputVerified": false
+    }
+  }
 }
